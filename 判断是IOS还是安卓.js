@@ -1,0 +1,1 @@
+　　var browser = navigator.userAgent, app = navigator.appVersion;var isAndroid = browser.indexOf('Android') > -1 || browser.indexOf('Linux') > -1;    //android终端或者uc浏览器var isiOS = !!browser.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);                  //ios终端alert('是否是Android：'+isAndroid);alert('是否是iOS：'+isiOS); }

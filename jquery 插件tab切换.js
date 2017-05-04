@@ -1,0 +1,2 @@
+$.fn.tabSwitch = function(e){ var defaults = { 'method': 'mouseover'}; var e = $.extend(defaults, e); var $tab_content = $(this).find('.tab-content>div'); var $tab_title = $(this).find('.tab-title span');  $tab_title[e.method](function(){$(this).addClass('selected').siblings().removeClass('selected');$tab_content.eq($(this).index()).stop(true,true).show().siblings().stop(true,true).hide();});};
+//调用方法：$('div').tabSwitch({'method': 'click'});
